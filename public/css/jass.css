@@ -11,10 +11,7 @@ html {
   -webkit-text-size-adjust: 100%;
   /* 2 */
 }
-/* 
-.navbar_nav {
-  color:#1a1a1a;
-} */
+
 /* Sections
    ========================================================================== */
 /**
@@ -38,11 +35,6 @@ main {
 h1 {
   font-size: 2em;
   margin: 0.67em 0;
-}
-
-.h1 {
-    font-size: 3.25rem;
-    margin: 100px 15px 0px 0px;
 }
 
 /* Grouping content
