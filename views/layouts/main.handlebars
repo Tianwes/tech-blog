@@ -6,18 +6,22 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Let's Blog Tech</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-  <link rel="stylesheet" href="/css/jass.css">
-  <link rel="stylesheet" href="/css/style.css">
+  {{!-- <link rel="stylesheet" href="../../public/css/jass.css"> --}}
+  <link rel="stylesheet" type="text/css" href="/css/style.css">
+  {{!-- LineIcons CDN --}}
+  <link href="https://cdn.lineicons.com/2.0/LineIcons.css" rel="stylesheet">
+
 </head>
 
 <body>
  <div class="flex-column justify-space-around">
     <header class="display-flex justify-space-between align-center p-2">
       <h1>
-        <span role="img" aria-label="logo">Logo</span>
+        <span role="img" aria-label="text-bubble"><i class="lni lni-bubble"></i></i></span>
         <a href="/">Let's Blog Tech!</a>
       </h1>
-      <nav>
+
+      <nav class="nav-top">
         {{#if logged_in}}
         <a href="/profile">profile</a> |
         <button class="no-button" id="logout">logout</button>
@@ -25,6 +29,7 @@
         <a href="/login">login</a>
         {{/if}}
       </nav>
+
     </header>
     <main class="container container-fluid mt-5">
       {{{ body }}}

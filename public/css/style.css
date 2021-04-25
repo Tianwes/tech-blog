@@ -1,4 +1,9 @@
-header, .project:not(:last-child) {
+body{
+  background-color: #2f4f4f1f;
+}
+
+/* Header/ Logo */
+header, .post:not(:last-child) {
   border-bottom: 1px solid #ccc;
 }
 
@@ -7,18 +12,44 @@ header, .project:not(:last-child) {
   border: none;
   padding: 0;
   cursor: pointer;
-  color: #1b89bc;
+  color: darkorange;
   text-decoration: none;
   font-size: 100%;
 }
 
 .no-button:hover {
-  color: #065b83;
-  text-decoration: underline;
+  color: wheat;
+  text-decoration: none;
 }
 
-.dollar-amount {
-  color: #056605;
-  font-weight: bold;
-  margin-left: -5px;
+.p-2 {
+  background-color: darkslategray;
+  color: greenyellow;
+}
+
+a {
+  color: yellowgreen;
+  text-decoration: none;
+
+}
+
+a:hover {
+  color: chartreuse;
+  text-decoration: none;
+}
+
+/* Profile/ Make a post page */
+.submit-post-btn {
+  background-color: yellowgreen;
+}
+
+.new-post-row {
+  justify-content: center;
+}
+
+.new-post-col {
+  background-color: darkslategrey;
+  color: yellowgreen;
+  padding: 25px 45px;
+  border-radius: 10px;
 }
